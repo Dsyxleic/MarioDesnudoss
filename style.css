@@ -11,6 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color:black;
+    color:white;
 }
 
 /* Fondo que cambia de color */
@@ -113,9 +115,10 @@ body {
     display: inline-block;
     padding: 15px 30px;
     border-radius: 10px;
-    background: linear-gradient(270deg, #ff6b6b, #ffd93d, #6bc6ff, #8bc34a);
+    background:red;
     background-size: 400% 400%;
     animation: colorShift 6s ease infinite;
+    margin:auto;
 }
 
 /* Animación del fondo del recuadro */

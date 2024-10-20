@@ -1,0 +1,147 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Fondo que cambia de color */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(270deg, #ff6b6b, #ffd93d, #6bc6ff, #8bc34a);
+    background-size: 800% 800%;
+    animation: colorChange 10s ease infinite;
+}
+
+/* Animación del cambio de color */
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Gif central */
+.central-ditto {
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Gifs móviles */
+.moving-gifs {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-to-right {
+    left: 0;
+    animation: moveLeftToRight 8s linear infinite;
+}
+
+.right-to-left {
+    right: 0;
+    animation: moveRightToLeft 8s linear infinite;
+}
+
+/* Gifs que se mueven */
+.ditto-moving {
+    width: 150px;
+    opacity: 0.5;
+}
+
+/* Movimiento de izquierda a derecha */
+@keyframes moveLeftToRight {
+    0% {
+        left: -150px;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+
+/* Movimiento de derecha a izquierda */
+@keyframes moveRightToLeft {
+    0% {
+        right: -150px;
+    }
+    100% {
+        right: 100vw;
+    }
+}
+
+/* Aplicamos un fondo negro para la página de advertencia */
+.warning-page {
+    background-color: #000; /* Fondo negro */
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.warning-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.warning-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Recuadro que cambia de color */
+.color-changing-box {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #ff6b6b, #ffd93d, #6bc6ff, #8bc34a);
+    background-size: 400% 400%;
+    animation: colorShift 6s ease infinite;
+}
+
+/* Animación del fondo del recuadro */
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Botón dentro del recuadro */
+.warning-link {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+
+.warning-link:hover {
+    color: #000; /* Cambia el texto a negro cuando pases sobre él */
+}

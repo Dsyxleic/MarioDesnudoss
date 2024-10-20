@@ -13,6 +13,7 @@ body {
     overflow: hidden;
     background-color:black;
     color:white;
+    margin:0;
 }
 
 /* Fondo que cambia de color */
@@ -118,7 +119,7 @@ body {
     background:red;
     background-size: 400% 400%;
     animation: colorShift 6s ease infinite;
-    margin:auto;
+    
 }
 
 /* Animación del fondo del recuadro */
